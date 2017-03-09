@@ -1,0 +1,33 @@
+.slider{overflow: hidden; margin: 0 auto; position: relative;}
+.slider *{margin: 0; padding: 0;}
+.slider ul li{list-style: none;}
+.slider .slides{width: 10000%; position:absolute; top: 0; left: 0;}
+.slider .slides > li{float: left;}
+.slider .slides > li > img{width: 100%; height: auto;}
+.slider .pre,
+.slider .next{position: absolute; top: 50%;
+    -webkit-transform: translateY(-50);
+    -moz-transform: translateY(-50);
+    -ms-transform: translateY(-50);
+    -o-transform: translateY(-50);
+    transform: translateY(-50);
+    background-image: url('../img/arrow.png'); background-repeat: no-repeat; width: 50px; height: 100px; cursor: pointer;}
+.slider .pre{left: 10px; background-position: 0 0;}
+.slider .next{right: 10px; background-position: -48px 0px;}
+.slider .pre:hover{background-position: 0 -100px;}
+.slider .next:hover{background-position: -48px -100px;}
+
+.slider .pagination{position: absolute; left: 50%; bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);}
+.slider .pagination > li{float: left; padding: 20px 10px;}
+.slider .pagination > li > span{display: block; cursor: pointer; width: 10px; height: 10px; border-radius: 50%; background-color: #fff;}
+.slider .pagination > li.active > span{background-color: #666;}
+
+
+
+
+
